@@ -1,56 +1,77 @@
 apiVersion: v1
 entries:
-  alpine:
+  dependencies-v1:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2020-09-26T14:30:27.653709166Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.7.17
+    description: Chart to test dependencies
+    digest: 43a241c6705b3704721e19be2bb4732caa41c0a71931f50b821c2b3a71336083
+    home: https://github.com/helm/charts-repo-actions-demo
+    maintainers:
+    - email: email@example.com
+      name: Name
+    name: dependencies-v1
+    sources:
+    - https://github.com/helm/charts-repo-actions-demo
+    urls:
+    - https://github.com/unguiculus/charts-repo-actions-demo/releases/download/dependencies-v1-0.1.6/dependencies-v1-0.1.6.tgz
+    version: 0.1.6
+  dependencies-v2:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2020-09-26T14:30:27.768567002Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.7.17
+    description: Chart to test dependencies
+    digest: 06b21140993fb85844ee9f999e738f68e14c8dd24a1e9a7764e1d4e23348fc85
+    home: https://github.com/helm/charts-repo-actions-demo
+    maintainers:
+    - email: email@example.com
+      name: Name
+    name: dependencies-v2
+    sources:
+    - https://github.com/helm/charts-repo-actions-demo
+    urls:
+    - https://github.com/unguiculus/charts-repo-actions-demo/releases/download/dependencies-v2-0.1.6/dependencies-v2-0.1.6.tgz
+    version: 0.1.6
+  example-v1:
   - apiVersion: v1
     appVersion: "3.9"
-    created: "2019-12-08T04:08:12.301238062Z"
+    created: "2020-09-26T14:30:27.862301259Z"
     description: Deploy a basic Alpine Linux pod
-    digest: 9b73a54e1bf5fd44a164929c3e1e7f7f7fbacb9f1fc18f1c77b64f6ae68b0a37
+    digest: a9a9b8a5b0db0532914e02ba07387f3cef70b9b94a1d1fbbacf5484bb390f261
     home: https://helm.sh/helm
     maintainers:
     - email: email@example.com
       name: Name
-    name: alpine
+    name: example-v1
     sources:
     - https://github.com/helm/helm
     urls:
-    - https://github.com/scottrigby/charts-repo-test/releases/download/alpine-0.1.2/alpine-0.1.2.tgz
-    version: 0.1.2
-  - apiVersion: v1
-    appVersion: "3.9"
-    created: "2019-12-08T02:59:01.234895862Z"
-    description: Deploy a basic Alpine Linux pod
-    digest: 693354c9b88f13bd53c1798bcf3cea4cf745926c82e74e6ef0a532aad11f2e90
-    home: https://helm.sh/helm
-    name: alpine
-    sources:
-    - https://github.com/helm/helm
-    urls:
-    - https://github.com/scottrigby/charts-repo-test/releases/download/alpine-0.1.1/alpine-0.1.1.tgz
-    version: 0.1.1
-  example:
-  - apiVersion: v1
+    - https://github.com/unguiculus/charts-repo-actions-demo/releases/download/example-v1-0.1.9/example-v1-0.1.9.tgz
+    version: 0.1.9
+  example-v2:
+  - apiVersion: v2
     appVersion: "1.0"
-    created: "2019-12-08T04:08:12.428337515Z"
+    created: "2020-09-26T14:30:27.972073476Z"
     description: A Helm chart for Kubernetes
-    digest: 22146a53e8df4322eb735333a82915fb9ed46b96428dfceb23010620ab41e050
+    digest: 41c15f7556dcb0ad486f0cccd69502d1256d83523c5bbe2698935efa27f12442
     home: https://helm.sh/helm
     maintainers:
     - email: email@example.com
       name: Name
-    name: example
+    name: example-v2
     sources:
     - https://github.com/helm/helm
     urls:
-    - https://github.com/scottrigby/charts-repo-test/releases/download/example-0.1.2/example-0.1.2.tgz
-    version: 0.1.2
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: "2019-12-08T02:57:22.079029976Z"
-    description: A Helm chart for Kubernetes
-    digest: 97dbef07c948b1c7e93b4b1d6bfbcb61f1a6f2e4189494b2ea822b824f1a403e
-    name: example
-    urls:
-    - https://github.com/scottrigby/charts-repo-test/releases/download/example-0.1.1/example-0.1.1.tgz
-    version: 0.1.1
-generated: "2019-12-08T02:57:21.985425597Z"
+    - https://github.com/unguiculus/charts-repo-actions-demo/releases/download/example-v2-0.2.5/example-v2-0.2.5.tgz
+    version: 0.2.5
+generated: "2020-09-26T14:30:27.43389353Z"
